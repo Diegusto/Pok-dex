@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ef5350;
+    padding: 10px 20px;
+    color: white;
+}
+
+#hamburger-menu {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#nav-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#nav-menu ul li {
+    margin: 0 10px;
+}
+
+#nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.pokemon-card {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    }
+    
+    #prev, #next {
+    padding: 0.5rem 1rem;
+    }
+    
+    .pokemon-form {
+    margin-bottom: 2rem;
+    }
+    
+    .pokemon-form img {
+    width: 200px;
+    height: 200px;
+    }
+    
+    .stat {
+    display: flex;
+    align-items: center;
+    }
+    
+    .stat-name {
+    width: 100px;
+    }
+    
+    .stat-bar {
+    flex-grow: 1;
+    background-color: #ddd;
+    height: 10px;
+    margin-left: 10px;
+    position: relative;
+    }
+    
+    .stat-bar-fill {
+    height: 100%;
+    }
+    
+    .stat-hp .stat-bar-fill {
+    background-color: #ff5959;
+    }
+    
+    .stat-attack .stat-bar-fill {
+    background-color: #f5ac78;
+    }
+    
+    .stat-defense .stat-bar-fill {
+    background-color: #fae078;
+    }
+    
+    .stat-special-attack .stat-bar-fill {
+    background-color: #9db7f5;
+    }
+    
+    .stat-special-defense .stat-bar-fill {
+    background-color: #a7db8d;
+    }
+    
+    .stat-speed .stat-bar-fill {
+    background-color: #fa92b2;
+    }
+    
+    @media (max-width: 600px) {
+    #hamburger-menu {
+    display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+

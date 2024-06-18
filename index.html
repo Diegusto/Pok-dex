@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <div id="hamburger-menu">&#9776;</div>
+        <nav id="nav-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Pokémons</a></li>
+                <li><a href="moves.html">Movimentos</a></li>
+                <li><a href="abilities.html">Abilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search Pokémon">
+            <button type="submit">Search</button>
+        </form>
+        <div id="pokemon-container" class="pokemon-grid"></div>
+        <div id="pagination">
+            <button id="prev">Anterior</button>
+            <button id="next">Próximo</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
